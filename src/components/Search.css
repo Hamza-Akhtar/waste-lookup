@@ -13,15 +13,15 @@
     border-radius: 3px;
     font-size: 1.5rem;
     float:left;
-    margin-left: 1.5vw;
+    margin-left: 3vw;
     padding-left: 2vw;
 }
 
 .searchBtn {
     height: 7.5vh;
     min-height: 43px;
-    width: 4%;
-    min-width: 35px;
+    width: 3.8%;
+    min-width: 30px;
     margin-left: 0.8vw;
     background-color: #2a9560;
     font-size: 20px;

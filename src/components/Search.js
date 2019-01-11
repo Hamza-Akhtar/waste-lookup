@@ -72,7 +72,7 @@ class Search extends Component {
                     <button onClick={this.search} className="searchBtn"></button>
                 </div>
                 <div>
-                    <SearchResults addorRemoveFromFavs={this.addorRemoveFromFavs} arr={filteredList} />
+                    <SearchResults addorRemoveFromFavs={this.addorRemoveFromFavs} arr={filteredList} favourites={this.state.favourites} />
                     <Favourites  addorRemoveFromFavs={this.addorRemoveFromFavs} favourites={this.state.favourites} />
                 </div>
             </div>

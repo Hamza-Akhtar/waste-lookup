@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Favourites.css'
-import img from './star-btn.png'
+import img from './star-btn-selected.png'
 import ReactHtmlParser from 'react-html-parser';
 
 
