@@ -1,0 +1,38 @@
+.searchBarDiv {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.searchBar {
+    position:relative;
+    width: 86%;
+    overflow: hidden; 
+    height: 7vh;
+    min-height: 40px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    float:left;
+    margin-left: 1.5vw;
+    padding-left: 2vw;
+}
+
+.searchBtn {
+    height: 7.5vh;
+    min-height: 43px;
+    width: 4%;
+    min-width: 35px;
+    margin-left: 0.8vw;
+    background-color: #2a9560;
+    font-size: 20px;
+    background: url('../ux/search-btn.png') ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    float:left;
+    padding: 0;
+    border: none;
+border-radius: 3px;
+overflow: hidden;
+
+
+}
