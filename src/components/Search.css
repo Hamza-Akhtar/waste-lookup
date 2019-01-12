@@ -4,35 +4,33 @@
 }
 
 .searchBar {
-    position:relative;
+    position: relative;
     width: 86%;
-    overflow: hidden; 
+    overflow: hidden;
     height: 7vh;
     min-height: 40px;
     border: 1px solid grey;
     border-radius: 3px;
     font-size: 1.5rem;
-    float:left;
+    float: left;
     margin-left: 3vw;
     padding-left: 2vw;
+    margin-bottom: 5px;
 }
 
 .searchBtn {
     height: 7.5vh;
     min-height: 43px;
-    width: 3.8%;
+    width: 4%;
     min-width: 30px;
-    margin-left: 0.8vw;
+    margin-left: 1.5vw;
     background-color: #2a9560;
     font-size: 20px;
-    background: url('../ux/search-btn.png') ;
+    background: url('../ux/search-btn.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    float:left;
+    float: left;
     padding: 0;
-    border: none;
-border-radius: 3px;
-overflow: hidden;
-
-
+    border-radius: 3px;
+    overflow: hidden;
 }

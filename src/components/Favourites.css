@@ -7,10 +7,11 @@
 }
 
 .favouritesH2 {
-    padding-left: 45px;
+    padding-left: 43px;
+    font-size: 1.7rem;
 }
 
- .resultDiv2 {
+.resultDiv2 {
     width: 100%;
     color: black;
     margin-left: 3.8%;
@@ -27,8 +28,7 @@
     height: 15px;
 }
 
-.resultTitle
-{
+.resultTitle {
     width: 40%;
     float: left;
 }

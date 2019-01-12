@@ -5,7 +5,7 @@
     color: black;
 }
 
- .resultDiv {
+.resultDiv {
     width: 100%;
     margin-left: 3.8%;
 }
@@ -20,8 +20,7 @@
     height: 15px;
 }
 
-.resultTitle
-{
+.resultTitle {
     width: 40%;
     float: left;
 }
@@ -29,7 +28,7 @@
 .resultBody {
     width: 50%;
     float: left;
-    margin-bottom: 22px;
+    margin-bottom: 15px;
 }
 
 li {
