@@ -3,7 +3,7 @@
     margin-top: -25px;
     width: 100%;
     height: 18vh;
-    min-height: 50px;
+    min-height: 18vh;
     background-image: linear-gradient(to right, #215993, #2a9560);
 }
 
@@ -11,5 +11,5 @@
     color: white;
     text-align: center;
     vertical-align: middle;
-    line-height: 20vh;
+    line-height: 18vh;
 }

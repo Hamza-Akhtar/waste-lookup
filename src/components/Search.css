@@ -4,10 +4,9 @@
 }
 
 .searchBar {
-    position: relative;
     width: 86%;
     overflow: hidden;
-    height: 7vh;
+    height: 45px;
     min-height: 40px;
     border: 1px solid grey;
     border-radius: 3px;
@@ -19,9 +18,9 @@
 }
 
 .searchBtn {
-    height: 7.5vh;
+    height: 49px;
     min-height: 43px;
-    width: 4%;
+    width: 50px;
     min-width: 30px;
     margin-left: 1.5vw;
     background-color: #2a9560;
@@ -33,4 +32,76 @@
     padding: 0;
     border-radius: 3px;
     overflow: hidden;
+    border: none;
+}
+
+/* For Mobile */
+@media screen and (max-width: 540px) {
+    .searchBar {
+        position: relative;
+        width: 78%;
+        overflow: hidden;
+        height: 40px;
+        min-height: 40px;
+        border: 1px solid grey;
+        border-radius: 3px;
+        font-size: 1.5rem;
+        float: left;
+        margin-left: 3vw;
+        padding-left: 2vw;
+        margin-bottom: 5px;
+    }
+    .searchBtn {
+        height: 44px;
+        min-height: 43px;
+        width: 43px;
+        min-width: 30px;
+        margin-left: 1.5vw;
+        background-color: #2a9560;
+        font-size: 20px;
+        background: url('../ux/search-btn.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        float: left;
+        padding: 0;
+        border-radius: 3px;
+        overflow: hidden;
+        border: none;
+    }
+}
+
+/* For Tablets */
+@media screen and (min-width: 540px) and (max-width: 780px) {
+    .searchBar {
+        position: relative;
+        width: 83%;
+        overflow: hidden;
+        height: 50px;
+        min-height: 40px;
+        border: 1px solid grey;
+        border-radius: 3px;
+        font-size: 1.5rem;
+        float: left;
+        margin-left: 3vw;
+        padding-left: 2vw;
+        margin-bottom: 5px;
+    }
+    .searchBtn {
+        height: 53px;
+        min-height: 43px;
+        width: 50px;
+        min-width: 30px;
+        margin-left: 1.5vw;
+        background-color: #2a9560;
+        font-size: 20px;
+        background: url('../ux/search-btn.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        float: left;
+        padding: 0;
+        border: none;
+        border-radius: 3px;
+        overflow: hidden;
+        border: none;
+    }
 }

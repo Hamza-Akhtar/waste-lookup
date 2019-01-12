@@ -31,6 +31,10 @@
     margin-bottom: 15px;
 }
 
+.elemTitle {
+    display: -webkit-box;
+}
+
 li {
     margin: 10px 0;
 }

@@ -1,13 +1,13 @@
 .favourites {
     width: 100%;
-    height: 30vh;
+    height: 33vh;
     background-color: #f7fefa;
     color: #2a9560;
     display: table;
 }
 
 .favouritesH2 {
-    padding-left: 43px;
+    padding-left: 3.2vw;
     font-size: 1.7rem;
 }
 
@@ -37,6 +37,10 @@
     width: 50%;
     float: left;
     margin-bottom: 22px;
+}
+
+.elemTitle {
+    display: -webkit-box;
 }
 
 li {
