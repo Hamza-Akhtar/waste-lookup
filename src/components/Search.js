@@ -13,6 +13,21 @@ class Search extends Component {
     favourites: {}
   };
 
+  componentDidMount() {
+    var favs = localStorage.getItem("Favourites");
+
+    if (favs) {
+      try {
+        var parsedFavs = JSON.parse(favs);
+        this.setState({
+          favourites: parsedFavs
+        });
+      } catch (e) {
+        localStorage.removeItem("Favourites");
+      }
+    }
+  }
+
   addorRemoveFromFavs = elem => {
     var newFavourites = { ...this.state.favourites };
 
@@ -25,6 +40,9 @@ class Search extends Component {
     this.setState({
       favourites: newFavourites
     });
+
+    localStorage.setItem("Favourites", JSON.stringify(newFavourites));
+
   };
 
   search = e => {
