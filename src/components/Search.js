@@ -10,7 +10,8 @@ class Search extends Component {
     data: [],
     searchVal: "",
     results: [],
-    favourites: {}
+    favourites: {},
+    searched: false
   };
 
   componentDidMount() {
@@ -72,7 +73,8 @@ class Search extends Component {
       return elem.keywords.includes(this.state.searchVal.toLowerCase());
     });
     this.setState({
-      results: filterArr
+      results: filterArr,
+      searched: true
     });
   };
 
@@ -81,11 +83,12 @@ class Search extends Component {
 
     if (val === "") {
       this.setState({
-        results: []
+        results: [],
+        searched: false
       });
     }
     this.setState({
-      searchVal: val
+      searchVal: val, 
     });
   };
 
@@ -109,6 +112,7 @@ class Search extends Component {
             addorRemoveFromFavs={this.addorRemoveFromFavs}
             arr={filteredList}
             favourites={this.state.favourites}
+            searched={this.state.searched}
           />
           <Favourites
             addorRemoveFromFavs={this.addorRemoveFromFavs}

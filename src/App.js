@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Banner from "./ux/Banner";
+import Banner from "./banner/Banner";
 import Search from "./components/Search";
 
 class App extends Component {

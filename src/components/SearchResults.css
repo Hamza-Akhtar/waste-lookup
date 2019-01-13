@@ -38,3 +38,8 @@
 li {
     margin: 10px 0;
 }
+
+.noResults {
+    text-align: center;
+    padding-top: 80px;
+}

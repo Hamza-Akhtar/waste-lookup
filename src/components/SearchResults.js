@@ -39,7 +39,7 @@ class SearchResults extends Component {
               </div>
             );
           })
-        : null;
+        : this.props.searched ? <p className="noResults">No Results Found</p> : null;
     return <div className="searchResults">{filteredListDiv}</div>;
   }
 }
