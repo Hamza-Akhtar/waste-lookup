@@ -40,20 +40,19 @@
     .searchBar {
         position: relative;
         width: 78%;
-        overflow: hidden;
-        height: 40px;
-        min-height: 40px;
+        height: 35px;
+        min-height: 30px;
         border: 1px solid grey;
         border-radius: 3px;
-        font-size: 1.5rem;
+        font-size: 20px;
         float: left;
         margin-left: 3vw;
         padding-left: 2vw;
         margin-bottom: 5px;
     }
     .searchBtn {
-        height: 44px;
-        min-height: 43px;
+        height: 40px;
+        min-height: 33px;
         width: 43px;
         min-width: 30px;
         margin-left: 1.5vw;
