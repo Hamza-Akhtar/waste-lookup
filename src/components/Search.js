@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import Favourites from "./Favourites";
 import SearchResults from "./SearchResults";
-import "./Favourites.css";
-import "./Search.css";
+import "../css/Favourites.css";
+import "../css/Search.css";
 import axios from "axios";
 
 class Search extends Component {
@@ -61,17 +61,22 @@ class Search extends Component {
           this.filterByKeywods(this.state.data);
         });
     }
-    else {
-      if (this.state.searchVal !== "") {
+    else if (this.state.searchVal !== "") {
         this.filterByKeywods(this.state.data);
-      }
     }
   };
 
   filterByKeywods = data => {
-    var filterArr = data.filter(elem => {
-      return elem.keywords.includes(this.state.searchVal.toLowerCase());
+    var filterArr = [];
+    var searchValArr = this.state.searchVal.toLowerCase().split(' ');
+
+    searchValArr.forEach(searchWord => {
+    var tempFilterArr = data.filter(elem => {
+        return elem.keywords.includes(searchWord) && !filterArr.includes(elem);
+      });
+      filterArr = [...filterArr, ...tempFilterArr];
     });
+
     this.setState({
       results: filterArr,
       searched: true

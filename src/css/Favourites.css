@@ -11,35 +11,35 @@
     font-size: 1.7rem;
 }
 
-.resultDiv2 {
+.favsResultDiv {
     width: 100%;
     color: black;
     margin-left: 3.8%;
     margin-top: -15px;
 }
 
-.outer {
+.favsOuter {
     float: left;
     width: 5%;
 }
 
-.star {
+.favsStar {
     width: 15px;
     height: 15px;
 }
 
-.resultTitle {
+.favsResultTitle {
     width: 40%;
     float: left;
 }
 
-.resultBody {
+.favsResultBody {
     width: 50%;
     float: left;
     margin-bottom: 22px;
 }
 
-.elemTitle {
+.favsElemTitle {
     display: -webkit-box;
 }
 

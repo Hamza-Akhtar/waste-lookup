@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import "./SearchResults.css";
-import img from "./star-btn.png";
-import starSelected from "./star-btn-selected.png";
+import "../css/SearchResults.css";
+import starUnselected from "../images/star-btn-unselected.png";
+import starSelected from "../images/star-btn-selected.png";
 import ReactHtmlParser from "react-html-parser";
 
 class SearchResults extends Component {
@@ -22,7 +22,7 @@ class SearchResults extends Component {
                     <img
                       onClick={() => this.props.addorRemoveFromFavs(elem)}
                       alt="add or remove from favourites"
-                      src={elem.title in favourites ? starSelected : img}
+                      src={elem.title in favourites ? starSelected : starUnselected}
                       className="star"
                       key={Math.random() + "star"}
                     />

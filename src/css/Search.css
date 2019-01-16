@@ -27,7 +27,7 @@
     min-width: 30px;
     margin-left: 1.5vw;
     background-color: #2a9560;
-    background: url('../banner/search-btn.png');
+    background: url('../images/search-btn.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     float: left;
@@ -66,7 +66,7 @@
         margin-left: 1.5vw;
         background-color: #2a9560;
         font-size: 20px;
-        background: url('../banner/search-btn.png');
+        background: url('../images/search-btn.png');
         background-size: 100% 100%;
         background-repeat: no-repeat;
         float: left;
@@ -107,7 +107,7 @@
         margin-left: 1.5vw;
         background-color: #2a9560;
         font-size: 20px;
-        background: url('../banner/search-btn.png');
+        background: url('../images/search-btn.png');
         background-size: 100% 100%;
         background-repeat: no-repeat;
         float: left;
