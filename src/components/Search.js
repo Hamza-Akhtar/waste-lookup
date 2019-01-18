@@ -1,3 +1,5 @@
+// class to handle all search features
+
 import React, { Component } from "react";
 import Favourites from "./Favourites";
 import SearchResults from "./SearchResults";

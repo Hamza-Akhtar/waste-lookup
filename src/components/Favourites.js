@@ -1,3 +1,5 @@
+// Component to display favourites
+
 import React from "react";
 import "../css/Favourites.css";
 import starSelected from "../images/star-btn-selected.png";

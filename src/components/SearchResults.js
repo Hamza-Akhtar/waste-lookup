@@ -1,3 +1,5 @@
+// class to display all search results
+
 import React, { Component } from "react";
 import "../css/SearchResults.css";
 import starUnselected from "../images/star-btn-unselected.png";
