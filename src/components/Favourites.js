@@ -7,27 +7,27 @@ import ReactHtmlParser from "react-html-parser";
 
 const Favourites = (props) => {
   const favsMap = props.favourites;
-  const favsMapDiv = Object.keys(favsMap).map(function(key) {
+  const favsMapDiv = Object.keys(favsMap).map(function (key) {
     const elem = favsMap[key];
     const html = ReactHtmlParser(elem.body);
     return (
-      <div className="favsResultDiv" key={Math.random()}>
-        <div className="favsResultTitle" key={Math.random()}>
-          <p className="favsOuter" key={Math.random()}>
+      <div className="favsResultDiv" key={'favsResult' + elem.title}>
+        <div className="favsResultTitle" key={'favsTitle' + elem.title}>
+          <p className="favsOuter" key={'favsOuter' + elem.title}>
             <img
               onClick={() => props.addorRemoveFromFavs(elem)}
               alt="add or remove from favourites"
               src={starSelected}
               className="favsStar"
-              key={Math.random()}
+              key={'favsStar' + elem.title}
             />
           </p>
-          <p className="favsElemTitle" key={Math.random()}>
+          <p className="favsElemTitle" key={'favsElemTitle' + elem.title}>
             {elem.title}
           </p>
         </div>
         <div
-          key={Math.random()}
+          key={'favsElemBody' + elem.title}
           className="favsResultBody"
           dangerouslySetInnerHTML={{ __html: html }}
         />

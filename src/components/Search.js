@@ -64,7 +64,7 @@ class Search extends Component {
         });
     }
     else if (this.state.searchVal !== "") {
-        this.filterByKeywods(this.state.data);
+      this.filterByKeywods(this.state.data);
     }
   };
 
@@ -73,8 +73,9 @@ class Search extends Component {
     var searchValArr = this.state.searchVal.toLowerCase().split(' ');
 
     searchValArr.forEach(searchWord => {
-    var tempFilterArr = data.filter(elem => {
-        return elem.keywords.includes(searchWord) && !filterArr.includes(elem);
+      var tempFilterArr = data.filter(elem => {
+        return searchWord.trim() !== "" && elem.keywords.includes(searchWord)
+          && !filterArr.includes(elem);
       });
       filterArr = [...filterArr, ...tempFilterArr];
     });
@@ -95,7 +96,7 @@ class Search extends Component {
       });
     }
     this.setState({
-      searchVal: val, 
+      searchVal: val,
     });
   };
 

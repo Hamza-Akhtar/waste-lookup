@@ -11,37 +11,38 @@ class SearchResults extends Component {
     var result = this.props.arr;
     var favourites = this.props.favourites;
     const filteredListDiv =
-      result && result.length > 0
-        ? result.map(elem => {
-            const html = ReactHtmlParser(elem.body);
-            return (
-              <div className="resultDiv" key={Math.random() + "resultDiv"}>
-                <div
-                  className="resultTitle"
-                  key={Math.random() + "resultTitle"}
-                >
-                  <p className="outer" key={Math.random() + "outer"}>
-                    <img
-                      onClick={() => this.props.addorRemoveFromFavs(elem)}
-                      alt="add or remove from favourites"
-                      src={elem.title in favourites ? starSelected : starUnselected}
-                      className="star"
-                      key={Math.random() + "star"}
-                    />
-                  </p>
-                  <p className="elemTitle" key={Math.random() + "elemTitle"}>
-                    {elem.title}
-                  </p>
-                </div>
-                <div
-                  key={Math.random()}
-                  className="resultBody"
-                  dangerouslySetInnerHTML={{ __html: html }}
-                />
+      result && result.length > 0 ? (
+        result.map(elem => {
+          const html = ReactHtmlParser(elem.body);
+          return (
+            <div className="resultDiv" key={"result" + elem.title}>
+              <div className="resultTitle" key={"resultTitle" + elem.title}>
+                <p className="outer" key={"outer" + elem.title}>
+                  <img
+                    onClick={() => this.props.addorRemoveFromFavs(elem)}
+                    alt="add or remove from favourites"
+                    src={
+                      elem.title in favourites ? starSelected : starUnselected
+                    }
+                    className="star"
+                    key={"star" + elem.title}
+                  />
+                </p>
+                <p className="elemTitle" key={"elemTitle" + elem.title}>
+                  {elem.title}
+                </p>
               </div>
-            );
-          })
-        : this.props.searched ? <p className="noResults">No Results Found</p> : null;
+              <div
+                key={"resultBody" + elem.title}
+                className="resultBody"
+                dangerouslySetInnerHTML={{ __html: html }}
+              />
+            </div>
+          );
+        })
+      ) : this.props.searched ? (
+        <p className="noResults">No Results Found</p>
+      ) : null;
     return <div className="searchResults">{filteredListDiv}</div>;
   }
 }
